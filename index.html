@@ -1,0 +1,47 @@
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urlap</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="visszaigazolas">
+            <form>
+            <div>
+                <label for="bekernev">Megrendelő neve: </label>
+                <input type="text" name="bekernev" id="bekernev" onfocus="fokusz('bekernev')" onblur="elhagy('bekernev')">
+            </div>
+            <div>
+                <label for="bekercim">Megrendelő címe:</label>
+                <input type="text" name="bekercim" id="bekercim" onfocus="fokusz('bekercim')" onblur="elhagy('bekercim')">
+            </div>
+            <div>
+                <label for="bekertelefonszam">Megrendelő telefonszáma: </label>
+                <input type="text" name="bekertelefonszam" id="bekertelefon" value="+36" onfocus="fokusz('bekertelefon')" onblur="elhagy('bekertelefon')">
+            </div>
+        </form>
+            <div>
+                <input type="button" value="Elküld" id="elkuld" onclick="elkuld()">
+            </div>
+        </div>
+    <div class="visszaigazolas">
+        <h3>
+            <p>Visszaigazolás!</p>
+        </h3>
+        <div>Név: <div id="visszaignev">?</div>
+        </div>
+        <br>
+        <div>Cím: <div id="visszaigcim">?</div>
+        </div>
+        <br>
+        <div>Telefon: <div id="visszaigtelefon">?</div>
+        </div>
+    </div>
+</body>
+
+</html>
